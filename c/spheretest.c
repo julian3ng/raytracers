@@ -1,12 +1,16 @@
 #include <stdio.h>
+#include <float.h>
+#include <stdlib.h>
 #include "sphere.h"
 #include "ray.h"
+#include "world.h"
+#include "vec3.h"
+
 int main() {
-    sphere s = Sphere(Vec3(0, 0, -2), 1);
-    ray r = Ray(Vec3(0, 0, 0), Vec3(0, .5, -1));
+    sphere s = Sphere(Vec3(0, 0, -1), .5);
+    ray r = Ray(Vec3(0, 0, 0), Vec3(0, 0, -1));
 
-    hit_record rec = hit(s, r, 0, 10);
-
+    hit_record rec = hit_sphere(s, r, 0, 10);;
     printf("SPHERE\n");
     print_vec3f(s.center);
     printf(" %f\n", s.radius);

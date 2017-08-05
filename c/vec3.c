@@ -116,5 +116,6 @@ float clamp(float a, float t, float b) {
 
 vec3 lerp(vec3 u, float t, vec3 v) {
     float clamped_t = clamp(0, t, 1);
-    return add_vec3(mul_vec3f(u, 1-clamped_t), mul_vec3f(v, clamped_t));
+    vec3 rval = add_vec3(mul_vec3f(u, 1-clamped_t), mul_vec3f(v, clamped_t));
+    return rval;
 }

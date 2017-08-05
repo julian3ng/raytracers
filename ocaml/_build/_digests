@@ -1,0 +1,5 @@
+"Rule: ocaml: ml -> cmo & cmi (%=raytracer )": "\167D\001\165\252\151D\161\233\149W\243\195v\156v"
+"Rule: ocaml dependencies ml (%=raytracer )": "\1676S\212\200\247\232\227\028\201;\220\138\020\006\177"
+"Resource: /Users/julian/Documents/Programming/raytracers/ocaml/raytracer.ml": "=$\219|\222\171\2397\138\139\029\134\027\150\2467"
+"Rule: ocaml: cmx* & o* -> native (%=raytracer )": "d\192\012\\\222\2223\149\218\197j\005\169\178t\142"
+"Rule: ocaml: ml & cmi -> cmx & o (%=raytracer )": "\017\2209\240C\234c'\155\130Q=\019\237\235\205"

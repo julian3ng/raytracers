@@ -1,5 +1,6 @@
 #ifndef SPHERE_H
 #define SPHERE_H
+#include <stdbool.h>
 #include "vec3.h"
 #include "ray.h"
 #include "hit_record.h"
@@ -11,6 +12,6 @@ typedef struct sphere {
 } sphere;
 
 sphere Sphere(vec3 center, float radius);
-hit_record hit(sphere s, ray r, float t_min, float t_max);
+hit_record hit_sphere(sphere s, ray r, float t_min, float t_max); 
 
 #endif /* SPHERE_H */
